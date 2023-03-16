@@ -72,6 +72,18 @@ const EthereumRpc = ({
         }
     }
 
+    const purchaseToken = async (address) => {
+        try{
+            const web3 = new Web3(provider);
+            const contract = new Web3.eth.Contract(JSON.parse(RewardABI) , CONTRACT_REWARD_ADDRESS);
+
+            await contract.methods.purchaseNFT().send({
+                from: '',
+
+            })
+        }
+    }
+
     return {getChainId , getAccounts , getBalance , getDecimals , getUserInfo}
 }
 
