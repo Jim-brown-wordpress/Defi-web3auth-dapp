@@ -67,9 +67,9 @@ function App() {
 
 
           setProvider(web3auth.provider);
+          setIsAuthorized(true);
         }
 
-        setIsAuthorized(true);
       } catch(error) {
         console.log(error);
       }
