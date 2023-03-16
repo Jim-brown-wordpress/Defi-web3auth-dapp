@@ -60,16 +60,16 @@ function App() {
     const init = async () => {
       try {
         const web3auth = new Web3Auth(networkConfig);
-        // setWeb3auth(web3auth);
+        setWeb3auth(web3auth);
         await web3auth.initModal();
 
-        // if(web3auth.provider){
+        if(web3auth.provider){
 
 
-          // setProvider(web3auth.provider);
-        // }
+          setProvider(web3auth.provider);
+        }
 
-        // setIsAuthorized(true);
+        setIsAuthorized(true);
       } catch(error) {
         console.log(error);
       }
