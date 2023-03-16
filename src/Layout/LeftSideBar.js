@@ -240,11 +240,11 @@ const LeftSideBar = ({
               element: Adjust,
               to:'/orderHistory',
             },
-            // {
-            //   title: 'MatrixBonus',
-            //   element: Adjust,
-            //   to:'/matrixBonus',
-            // },
+            {
+              title: 'Earnings',
+              element: Adjust,
+              to:'/earnings',
+            },
             {
               title: 'MyReferrals',
               element: Adjust,
